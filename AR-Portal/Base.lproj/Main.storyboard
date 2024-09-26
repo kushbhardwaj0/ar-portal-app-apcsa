@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Portal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IFV-7E-fxq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orient your phone, select a location, and face the floor! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLN-JG-mVJ">
+                                <rect key="frame" x="57" y="60" width="300" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="67f-ES-PEd"/>
+                                    <constraint firstAttribute="height" constant="60" id="qrr-Zp-3Hx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ah-ra-eEU">
+                                <rect key="frame" x="75" y="651" width="80" height="60"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jhF-Gy-cI2"/>
+                                    <constraint firstAttribute="width" constant="80" id="x46-dd-AKZ"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Golden Gate">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Bridge">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="earth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NF9-X0-UMv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28o-5X-evv">
+                                <rect key="frame" x="200" y="651" width="80" height="60"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CLF-ix-Ep7"/>
+                                    <constraint firstAttribute="height" constant="60" id="mH1-vz-zFH"/>
+                                </constraints>
+                                <state key="normal" title="Church">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="moon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3O-4L-0D2"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKl-mI-hny">
+                                <rect key="frame" x="325" y="651" width="60" height="60"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="faF-1t-dQn"/>
+                                    <constraint firstAttribute="height" constant="60" id="pAc-6s-LWg"/>
+                                </constraints>
+                                <state key="normal" title="Mars">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mars:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXh-Wf-47Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2nW-IF-Mbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tKl-mI-hny" secondAttribute="bottom" constant="25" id="3fS-nv-pnv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Ah-ra-eEU" secondAttribute="bottom" constant="25" id="9XE-eY-7RJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="28o-5X-evv" secondAttribute="bottom" constant="25" id="BFX-86-SXO"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IXJ-eD-wn8"/>
+                            <constraint firstItem="dLN-JG-mVJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NpM-40-LRB"/>
+                            <constraint firstItem="dLN-JG-mVJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O5S-Mg-wLW"/>
+                            <constraint firstItem="3Ah-ra-eEU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="QPt-wx-Xxa"/>
+                            <constraint firstAttribute="bottom" secondItem="IFV-7E-fxq" secondAttribute="bottom" id="QZP-yx-dew"/>
+                            <constraint firstItem="28o-5X-evv" firstAttribute="leading" secondItem="3Ah-ra-eEU" secondAttribute="trailing" constant="45" id="SCZ-zn-Py1"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XCE-ul-qW1"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="XeR-4a-4df"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aAS-au-UUT"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hnJ-Fv-Fft"/>
+                            <constraint firstItem="tKl-mI-hny" firstAttribute="leading" secondItem="28o-5X-evv" secondAttribute="trailing" constant="45" id="pJ5-sZ-4i6"/>
+                            <constraint firstItem="IFV-7E-fxq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uIZ-K3-buE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="earth" destination="3Ah-ra-eEU" id="QsN-cy-fjX"/>
+                        <outlet property="mars" destination="tKl-mI-hny" id="KOJ-W6-2x1"/>
+                        <outlet property="moon" destination="28o-5X-evv" id="EwE-f5-LOO"/>
+                        <outlet property="planeDetected" destination="dLN-JG-mVJ" id="aNT-XU-B3f"/>
+                        <outlet property="sceneView" destination="IFV-7E-fxq" id="cUk-hS-1aq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
